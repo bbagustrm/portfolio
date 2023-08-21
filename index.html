@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <title>Document</title>
+</head>
+
+<body class="font-inter bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-200 overflow-x-hidden	">
+
+    <!-- NAVBAR -->
+    <div class="container mx-auto top-0 flex flex-row padding-content py-3 justify-between items-center ">
+        <h2>BagusTri</h2>
+        <!-- PHONE MODE -->
+        <img class="burger md:hidden" src="src/ic-burger-light.svg" alt="close" width="24px">
+        <img class="burger md:hidden" src="src/ic-burger-dark.svg" alt="close" width="24px">
+        <!-- DESKTOP MODE -->
+        <div class="desktop-navbar hidden md:flex flex-row">
+            <a href="#">Home</a>
+            <a href="#">About me</a>
+            <a href="#">Project</a>
+            <a href="#">Contact me</a>
+        </div>
+    </div>
+    <div class="h-[dvh] phone-navbar md:hidden absolute top-0 navbar pt-3 duration-300">
+        <img class="close mr-8 text-right" src="src/ic-close-light.svg" alt="close" width="24px">
+        <img class="close mr-8 text-right" src="src/ic-close-dark.svg" alt="close" width="24px">
+        <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Project</a>
+        <a href="#">Contact me</a>
+    </div>
+
+
+
+
+    <!-- HOME -->
+    <div class="container mx-auto shadow-lg h-[620px] md:h-[760px] lg:h-[860px] bg-cover bg-bottom flex justify-start flex-col items-center" style="background-image: url(src/wave1.svg);">
+        <div class="w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] bg-cover mt-12" style="background-image: url(src/img-profile.gif);"> </div>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl mt-6 mb-4 font-semibold text-center hidding"><span class="text-blue-500 dark:text-blue-400">Hello, I’m Bagus</span>, website<br>developer based inIndonesia</h1>
+        <p class="text-xs md:text-sm text-center text-gray-600 dark:text-gray-400 hidding">I specialize in front-end web design.Make it responsive <br>for mobile, tablet, and desktop.</p>
+        <div class="flex flex-row gap-4 mt-4 font-semibold lg:pb-12 hidding">
+            <a class="py-3 px-6 text-xs md:px-8 md:text-sm bg-blue-500 dark:bg-blue-400 hover:bg-blue-600 active:bg-blue-700 dark:hover:bg-blue-500 dark:active:bg-blue-600 text-white dark:text-gray-900 rounded-full" href="#">CONTACT ME</a>
+            <a class="py-3 px-6 text-xs md:px-8 md:text-sm border-[1px] border-gray-600 hover:text-gray-950 active:text-gray-700  dark:text-gray-300 dark:hover:text-white dark:active:text-gray-500 rounded-full" href="#">MY PROJECT</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- ABOUT -->
+    <div class="container mx-auto padding-content bg-white dark:bg-gray-800">
+        <li class="list-part mb-9">About me</li>
+        <div class="w-full flex flex-col md:flex-row">
+            <div class="basis-full md:basis-3/5 lg:basis-1/2 md:flex- mb-8 md:mb-0 md:mr-16 lg:mr-0">
+                <h2 class="mb-2">Bagus Tri Atmojo</h2>
+                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, quam vel, neque hic
+                    quidem eaque quos, modi nemo aspernatur iure quia sit exercitationem accusamus! Necessitatibus
+                    reiciendis totam ab placeat iure suscipit dolorum iusto rerum dolores nesciunt dolorem, pariatur
+                    facere officia.</p>
+            </div>
+            <div class="hidding basis-full md:basis-2/5 lg:basis-1/2 flex flex-row justify-center md:justify-end gap-3 flex-wrap items-center">
+                <img src="src/ic-html.svg" alt="html-logo" width="48px">
+                <img src="src/ic-css.svg" alt="html-logo" width="48px">
+                <img src="src/ic-js.svg" alt="html-logo" width="48px">
+                <img src="src/ic-tailwind.svg" alt="html-logo" width="48px">
+                <img src="src/ic-kotlin.svg" alt="html-logo" width="48px">
+                <img src="src/ic-android.svg" alt="html-logo" width="48px">
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="container mx-auto padding-content">
+        <li class="list-part mb-12">My Project</li>
+        <div class="h-[200px] w-full flex justify-center items-center">
+            <p class="text-gray-600 dark:text-gray-400">Belum ada project :(</p>
+        </div>
+        <!-- <div class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+            <div class="project-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus ipsa deserunt eligendi vel suscipit perferendis hic, eum dignissimos laboriosam earum numquam, iure repudiandae praesentium quibusdam nesciunt dolores id molestiae.</div>
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

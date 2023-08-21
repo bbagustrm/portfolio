@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    h2 {
+        @apply text-2xl font-medium
+    }
+}
+
+@layer components{
+
+    .hidding{
+        @apply opacity-0 duration-1000 blur-sm translate-x-full
+    }
+    .show{
+        @apply opacity-100 blur-none translate-x-0
+    }
+
+
+    .button{
+        @apply py-2 px-4 border-gray-600 border-2 rounded-full text-sm mx-2
+    }
+    .phone-navbar{
+        @apply bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-400;
+        @apply absolute top-0 right-0 flex flex-col h-screen w-1/2 shadow-lg items-end divide-y-2 divide-y-reverse divide-gray-200 dark:divide-gray-900
+    }
+    .phone-navbar a{
+        @apply font-medium text-sm py-4 pl-4 block w-full;
+        @apply hover:bg-blue-300 active:bg-blue-400 hover:text-white duration-100
+    }
+    .navbar{
+        @apply translate-x-full
+    }
+    .desktop-navbar a{
+        @apply py-2 px-6 text-sm rounded-lg;
+        @apply font-medium hover:text-gray-950 dark:hover:text-white 
+    }
+    .padding-content{
+        @apply px-8 md:px-12 lg:px-24;
+        @apply pt-6 pb-12 md:pt-8 md:pb-16 lg:pt-12 lg:pb-24
+    }
+    .list-part{
+        @apply list-disc list-inside text-blue-500 dark:text-blue-400 font-semibold
+    }
+    .testing{
+        @apply border-[1px] border-gray-500;
+    }
+    .project-content{
+        @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm dark:shadow-none dark:border-[1px] border-gray-400 p-4
+    }
+}
